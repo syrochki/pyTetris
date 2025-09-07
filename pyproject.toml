@@ -1,0 +1,29 @@
+[project]
+name = "pytetris"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "syrochki",email = "123834638+syrochki@users.noreply.github.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pyglet (>=2.1.8,<3.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.17.1"
+black = "^25.1.0"
+
+
+[tool.mypy]
+strict = true
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
