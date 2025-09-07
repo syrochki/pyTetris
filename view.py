@@ -8,6 +8,8 @@ class UIView:
         self.window = Window(width=1920, height=1800, caption="Tetris!")  # type: ignore
         self.ui = UIConstructor(window=self.window)
 
+        self.window.event(self.on_draw)
+
     def setup_ui(self) -> None:
         center_x = self.window.width // 2
         center_y = self.window.height // 2

@@ -7,8 +7,6 @@ from pyglet.window import key
 class Game:
     def __init__(self) -> None:
         self.view = UIView()
-
-        self.view.window.event(self.view.on_draw)
         self.view.window.event(self.on_key_press)
 
     def on_key_press(self, symbol: int, modifiers: int) -> None:

@@ -1,4 +1,4 @@
-from typing import Literal, Any
+from typing import Any
 
 from pyglet.window import Window
 from pyglet.text import Label
